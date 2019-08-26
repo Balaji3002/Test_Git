@@ -1,0 +1,14 @@
+import os
+
+#Define the name of the Directory
+path = "/tmp/sample"
+
+#Creating the Folder
+try:
+    os.mkdir(path,0o755)
+except OSError:
+    print("creation of the directory %s failed" %path)
+else:
+    print("Sucessfully created the directory %s" % path)
+
+
